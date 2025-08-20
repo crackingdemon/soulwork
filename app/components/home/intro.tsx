@@ -11,17 +11,17 @@ function Intro() {
           <div>
             <div className="text-sm font-bold mb-4 tracking-wide">HEYY!</div>
             <h2 className="text-5xl sm:text-6xl md:text-8xl font-light mb-6 leading-tight playfair">
-              I'M
+              I&apos;M
               <br />
               ADI.
             </h2>
             <p className="text-black mb-6 leading-8 text-lg">
-              I'm here to guide you through the transformative journey of soul
-              work. Whether you found me through a friend's recommendation or
-              discovered my content online, I'm grateful you're here. This space
-              is filled with resources, insights, and tools designed to help you
-              connect with your authentic self and create meaningful change in
-              your life.
+              I&apos;m here to guide you through the transformative journey of
+              soul work. Whether you found me through a friend&apos;s
+              recommendation or discovered my content online, I&apos;m grateful
+              you&apos;re here. This space is filled with resources, insights,
+              and tools designed to help you connect with your authentic self
+              and create meaningful change in your life.
             </p>
             <Link href={"#"}>
               <Button className="bg-[var(--secondary)] text-white px-8 py-3 rounded-full transition-all duration-200 hover:scale-105">
