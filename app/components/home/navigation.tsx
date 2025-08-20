@@ -1,0 +1,282 @@
+"use client";
+import { Button } from "@/components/ui/button";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { useState } from "react";
+import Link from "next/link";
+
+export default function Navigation() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    setActiveDropdown(null);
+  };
+
+  const toggleDropdown = (dropdown: string) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
+  };
+
+  return (
+    <>
+      {/* Desktop & Mobile Navigation Bar */}
+      <nav className="fixed top-0 w-full backdrop-blur-sm z-50 border-b border-gray-100 bg-[#ccc2a2]">
+        <div className="max-w-9xl mx-auto px-6 py-4 text-[var(--secondary)]">
+          <div className="flex items-center justify-between">
+            <div className="text-3xl font-bold tracking-tight text-[var(--secondary)] playfair">
+              SOUL WORK
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-8 font-medium text-lg">
+              <Link
+                href="#"
+                className=" hover:text-[#c78067] transition-colors"
+              >
+                Blog
+              </Link>
+              <div className="relative group">
+                <Link
+                  href="#"
+                  className="text-[var(--secondary)] hover:text-[#c78067] transition-colors flex items-center"
+                >
+                  Invest
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Link>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="py-2">
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      The Ascent
+                    </Link>
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      SoulWork Live
+                    </Link>
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      Other Events
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <Link
+                href="#"
+                className=" hover:text-[#c78067] transition-colors"
+              >
+                Film
+              </Link>
+              <Link
+                href="#"
+                className=" hover:text-[#c78067] transition-colors"
+              >
+                Podcast
+              </Link>
+              <Link
+                href="#"
+                className="  hover:text-[#c78067] transition-colors"
+              >
+                About
+              </Link>
+              <div className="relative group">
+                <Link
+                  href="#"
+                  className="  hover:text-[#c78067] transition-colors flex items-center"
+                >
+                  More
+                  <ChevronDown className="w-4 h-4 ml-1" />
+                </Link>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white  rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="py-2">
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      Testimonials
+                    </Link>
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      Media Kit
+                    </Link>
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      Giving Back
+                    </Link>
+                    <Link href="#" className="block px-4 py-2 text-sm ">
+                      Hire Adi to Speak
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full pb-4 pt-2 border-b-4 border-black text-lg">
+                Free Training
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <div className="lg:hidden">
+              <Button
+                // variant="ghost"
+                size="sm"
+                className="text-[var-(--secondary)] bg-[#ccc2a2]"
+                onClick={toggleMenu}
+              >
+                {isMenuOpen ? (
+                  <X className="w-6 h-6 scale-200" />
+                ) : (
+                  <Menu className="w-6 h-6 scale-200 " />
+                )}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Full Screen Overlay Menu */}
+      <div
+        className={`fixed inset-0 z-40 lg:hidden transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="absolute inset-0 bg-[#f6f1eb]">
+          <div className="flex flex-col h-full">
+            {/* Menu Header */}
+            <div
+              className="flex items-center justify-between p-6 border-b"
+              style={{ backgroundColor: "var(--primary)" }}
+            >
+              <div className="text-xl font-bold tracking-tight text-white">
+                SOUL WORK
+              </div>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-white p-2"
+                onClick={toggleMenu}
+              >
+                <X className="w-6 h-6" />
+              </Button>
+            </div>
+
+            {/* Menu Content */}
+            <div className="flex-1 overflow-y-auto">
+              <div className="p-6 space-y-6">
+                {/* Invest Dropdown */}
+                <div>
+                  <button
+                    onClick={() => toggleDropdown("invest")}
+                    className="flex items-center justify-between w-full text-left text-lg  text-gray-900 hover:text-[#c78067] transition-colors border-b-[1px] border-b-[#c78067] pb-4"
+                  >
+                    Invest
+                    <ChevronDown
+                      className={`w-5 h-5 transition-transform duration-200 ${
+                        activeDropdown === "invest" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {activeDropdown === "invest" && (
+                    <div className="mt-3 ml-4 space-y-3">
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        The Ascent
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        SoulWork Live
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        Other Events
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                {/* Film */}
+                <div>
+                  <Link
+                    href="#"
+                    className="block text-lg text-gray-900 hover:text-[#c78067] transition-colors border-b-[1px] border-b-[#c78067] pb-4"
+                  >
+                    Film
+                  </Link>
+                </div>
+
+                {/* Podcast */}
+                <div>
+                  <Link
+                    href="#"
+                    className="block text-lg  text-gray-900 hover:text-[#c78067] transition-colors border-b-[1px] border-b-[#c78067] pb-4"
+                  >
+                    Podcast
+                  </Link>
+                </div>
+
+                {/* About */}
+                <div>
+                  <Link
+                    href="#"
+                    className="block text-lg  text-gray-900 hover:text-[#c78067] transition-colors border-b-[1px] border-b-[#c78067] pb-4"
+                  >
+                    About
+                  </Link>
+                </div>
+
+                {/* More Dropdown */}
+                <div>
+                  <button
+                    onClick={() => toggleDropdown("more")}
+                    className="flex items-center justify-between w-full text-left text-lg font-medium text-gray-900 hover:text-[#c78067] transition-colors border-b-[1px] border-b-[#c78067] pb-4"
+                  >
+                    More
+                    <ChevronDown
+                      className={`w-5 h-5 transition-transform duration-200 ${
+                        activeDropdown === "more" ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                  {activeDropdown === "more" && (
+                    <div className="mt-3 ml-4 space-y-3">
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        Testimonials
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        Media Kit
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        Giving Back
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                      >
+                        Hire Adi to Speak
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                {/* Free Training Button */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Backdrop */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"
+          onClick={toggleMenu}
+        />
+      )}
+    </>
+  );
+}
