@@ -21,14 +21,14 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop & Mobile Navigation Bar */}
-      <nav className="fixed top-0 w-full backdrop-blur-sm z-50 border-b border-gray-100 bg-[#ccc2a2]">
-        <div className="max-w-9xl mx-auto px-6 py-2 text-[var(--secondary)]">
+      <nav className="fixed top-0 w-full backdrop-blur-sm z-50 bg-black">
+        <div className="max-w-9xl mx-auto px-6 py-2 text-white">
           <div className="flex items-center justify-between">
             <div>
               <Link href={"/"}>
                 {" "}
                 <Image
-                  src={"/logo.png"}
+                  src={"/logo2.jpeg"}
                   width={200}
                   height={60}
                   alt="soul logo"
@@ -47,12 +47,12 @@ export default function Navigation() {
               <div className="relative group">
                 <Link
                   href="#"
-                  className="text-[var(--secondary)] hover:text-[#c78067] transition-colors flex items-center"
+                  className="text-white hover:text-[#c78067] transition-colors flex items-center"
                 >
                   Invest
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Link>
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="py-2">
                     <Link href="/#ascent" className="block px-4 py-2 text-sm ">
                       The Ascent
@@ -92,7 +92,7 @@ export default function Navigation() {
                   More
                   <ChevronDown className="w-4 h-4 ml-1" />
                 </Link>
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white  rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="py-2">
                     <Link href="#" className="block px-4 py-2 text-sm ">
                       Testimonials
@@ -109,7 +109,7 @@ export default function Navigation() {
                   </div>
                 </div>
               </div>
-              <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full pb-4 pt-2 border-b-4 border-black text-lg">
+              <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full pb-4 pt-2 border-b-2 border-[var(--primary)] text-lg">
                 Free Training
               </Button>
             </div>
@@ -179,19 +179,19 @@ export default function Navigation() {
                     <div className="mt-3 ml-4 space-y-3">
                       <Link
                         href="/#ascent"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-base  hover:text-gray-900 transition-colors"
                       >
                         The Ascent
                       </Link>
                       <Link
                         href="#"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-base hover:text-gray-900 transition-colors"
                       >
                         SoulWork Live
                       </Link>
                       <Link
                         href="#"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
+                        className="block text-base  hover:text-gray-900 transition-colors"
                       >
                         Other Events
                       </Link>
@@ -242,34 +242,33 @@ export default function Navigation() {
                       }`}
                     />
                   </button>
-                  {activeDropdown === "more" && (
-                    <div className="mt-3 ml-4 space-y-3">
-                      <Link
-                        href="#"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
-                      >
-                        Testimonials
-                      </Link>
-                      <Link
-                        href="#"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
-                      >
-                        Media Kit
-                      </Link>
-                      <Link
-                        href="#"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
-                      >
-                        Giving Back
-                      </Link>
-                      <Link
-                        href="#"
-                        className="block text-base text-gray-600 hover:text-gray-900 transition-colors"
-                      >
-                        Hire Adi to Speak
-                      </Link>
-                    </div>
-                  )}
+                  activeDropdown === "more" &&
+                  <div className="mt-3 ml-4 space-y-3">
+                    <Link
+                      href="#"
+                      className="block text-base  hover:text-gray-900 transition-colors"
+                    >
+                      Testimonials
+                    </Link>
+                    <Link
+                      href="#"
+                      className="block text-base  hover:text-gray-900 transition-colors"
+                    >
+                      Media Kit
+                    </Link>
+                    <Link
+                      href="#"
+                      className="block text-base hover:text-gray-900 transition-colors"
+                    >
+                      Giving Back
+                    </Link>
+                    <Link
+                      href="#"
+                      className="block text-base hover:text-gray-900 transition-colors"
+                    >
+                      Hire Adi to Speak
+                    </Link>
+                  </div>
                 </div>
 
                 {/* Free Training Button */}

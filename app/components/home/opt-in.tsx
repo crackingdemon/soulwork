@@ -28,21 +28,19 @@ function OptIn() {
         </p>
 
         {/* ConvertKit Opt-in Form */}
-        <form
-          method="post"
-          className="flex flex-col sm:flex-row gap-4 justify-center"
-        >
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Input
             type="email"
             name="email_address"
             placeholder="Enter your email"
-            required
             className="px-4 py-3 border border-black w-full sm:w-auto flex-grow outline-none rounded-none bg-white "
           />
-          <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full border-b-4 border-black text-lg">
-            Get Free Training
-          </Button>
-        </form>
+          <Link href={"https://soulwork.kit.com/6ecb3fe716"} target="_blank">
+            <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full border-b-4 border-black text-lg cursor-pointer">
+              Get Free Training
+            </Button>
+          </Link>
+        </div>
         <Link className="text-xs text-gray-500 mt-4" href={"/privacy-policy"}>
           By entering your info, you&apos;ll become a SoulWorker and receive
           updates to your inbox. (Unsububscribe any time) You also agree to our

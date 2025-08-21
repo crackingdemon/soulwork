@@ -11,6 +11,7 @@ import Ascent from "./components/home/ascent";
 import Testimonials from "./components/home/testimonials";
 import WatchRead from "./components/home/watch-read";
 import AdiSpeaks from "./components/home/adi-speaks";
+import Trust from "./components/home/trust";
 
 export default function Home() {
   return (
@@ -37,10 +38,8 @@ export default function Home() {
         {/* Content */}
         <div className="text-center max-w-4xl mx-auto px-6 relative z-10 playfair">
           <h1 className="text-4xl sm:text-6xl  font-light leading-tight mb-8">
-            Root into SOUL and branch into WORK that serves the world Through{" "}
-            <em className="italic font-serif text-[#ffcac7] underline">
-              SoulWork
-            </em>
+            Welcome to the journey from your Soul to your{" "}
+            <em className="italic font-serif text-[#ffcac7] underline">Work</em>
           </h1>
         </div>
         {/* Scroll down icon */}
@@ -63,6 +62,7 @@ export default function Home() {
       <Podcast />
 
       <Testimonials />
+      <Trust />
     </div>
   );
 }
