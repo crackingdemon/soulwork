@@ -13,10 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Soul Work | Root into SOUL and branch into WORK that serves the world",
+  title: "SoulWork | Root into SOUL and branch into WORK that serves the world",
   description:
-    "Soul Work | Root into SOUL and branch into WORK that serves the world",
+    "SoulWork | Root into SOUL and branch into WORK that serves the world",
 };
 
 export default function RootLayout({

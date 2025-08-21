@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 
 function OptIn() {
   const ref = useRef(null);
@@ -17,14 +18,13 @@ function OptIn() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="text-3xl md:text-5xl font-light mb-4">
-          Get Your <em className="italic font-serif">Free</em> Soul Work
-          Training
+        <h2 className="text-3xl md:text-4xl font-light mb-4">
+          Discover How to Actualize Your{" "}
+          <em className="italic font-serif">Spiritual Gifts</em> into Real-World
+          Impact.
         </h2>
         <p className="text-gray-600 mb-8">
-          Download our exclusive guide and learn the{" "}
-          <strong>3 foundational steps to begin your soul work journey</strong>{" "}
-          – completely free.
+          Access <strong>SoulWork 101</strong> for FREE
         </p>
 
         {/* ConvertKit Opt-in Form */}
@@ -43,9 +43,11 @@ function OptIn() {
             Get Free Training
           </Button>
         </form>
-        <p className="text-xs text-gray-500 mt-4">
-          We respect your privacy. Unsubscribe anytime.
-        </p>
+        <Link className="text-xs text-gray-500 mt-4" href={"/privacy-policy"}>
+          By entering your info, you&apos;ll become a SoulWorker and receive
+          updates to your inbox. (Unsububscribe any time) You also agree to our
+          Terms of Use and Privacy Policy.
+        </Link>
       </motion.div>
     </section>
   );

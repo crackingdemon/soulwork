@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,10 +22,18 @@ export default function Navigation() {
     <>
       {/* Desktop & Mobile Navigation Bar */}
       <nav className="fixed top-0 w-full backdrop-blur-sm z-50 border-b border-gray-100 bg-[#ccc2a2]">
-        <div className="max-w-9xl mx-auto px-6 py-4 text-[var(--secondary)]">
+        <div className="max-w-9xl mx-auto px-6 py-2 text-[var(--secondary)]">
           <div className="flex items-center justify-between">
-            <div className="text-3xl font-bold tracking-tight text-[var(--secondary)] playfair">
-              SOUL WORK
+            <div>
+              <Link href={"/"}>
+                {" "}
+                <Image
+                  src={"/logo.png"}
+                  width={200}
+                  height={60}
+                  alt="soul logo"
+                />
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -64,7 +73,7 @@ export default function Navigation() {
                 Film
               </Link>
               <Link
-                href="#"
+                href="/#podcast"
                 className=" hover:text-[#c78067] transition-colors"
               >
                 Podcast

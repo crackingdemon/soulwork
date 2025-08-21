@@ -6,6 +6,7 @@ import Link from "next/link";
 import OptIn from "./components/home/opt-in";
 import Intro from "./components/home/intro";
 import SocialProof from "./components/home/social-proof";
+import Podcast from "./components/home/podcast";
 
 export default function Home() {
   return (
@@ -27,22 +28,17 @@ export default function Home() {
           muted
           playsInline
         />
-
         {/* Overlay (optional for better text contrast) */}
-        <div className="absolute inset-0 bg-black/50 -z-10"></div>
-
+        <div className="absolute inset-0 bg-black/50 -z-10"></div>x
         {/* Content */}
         <div className="text-center max-w-4xl mx-auto px-6 relative z-10 playfair">
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-light leading-tight mb-8">
-            Transform Your Life
-            <br />
-            Through{" "}
+          <h1 className="text-4xl sm:text-6xl  font-light leading-tight mb-8">
+            Root into SOUL and branch into WORK that serves the world Through{" "}
             <em className="italic font-serif text-[#ffcac7] underline">
-              Soul Work
+              SoulWork
             </em>
           </h1>
         </div>
-
         {/* Scroll down icon */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
           <Link href="#intro">
@@ -56,6 +52,8 @@ export default function Home() {
       <Intro />
 
       <SocialProof />
+
+      <Podcast />
     </div>
   );
 }
