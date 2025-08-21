@@ -242,33 +242,34 @@ export default function Navigation() {
                       }`}
                     />
                   </button>
-                  activeDropdown === "more" &&
-                  <div className="mt-3 ml-4 space-y-3">
-                    <Link
-                      href="#"
-                      className="block text-base  hover:text-gray-900 transition-colors"
-                    >
-                      Testimonials
-                    </Link>
-                    <Link
-                      href="#"
-                      className="block text-base  hover:text-gray-900 transition-colors"
-                    >
-                      Media Kit
-                    </Link>
-                    <Link
-                      href="#"
-                      className="block text-base hover:text-gray-900 transition-colors"
-                    >
-                      Giving Back
-                    </Link>
-                    <Link
-                      href="#"
-                      className="block text-base hover:text-gray-900 transition-colors"
-                    >
-                      Hire Adi to Speak
-                    </Link>
-                  </div>
+                  {activeDropdown === "more" && (
+                    <div className="mt-3 ml-4 space-y-3">
+                      <Link
+                        href="#"
+                        className="block text-base  hover:text-gray-900 transition-colors"
+                      >
+                        Testimonials
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base  hover:text-gray-900 transition-colors"
+                      >
+                        Media Kit
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base hover:text-gray-900 transition-colors"
+                      >
+                        Giving Back
+                      </Link>
+                      <Link
+                        href="#"
+                        className="block text-base  hover:text-gray-900 transition-colors"
+                      >
+                        Hire Adi to Speak
+                      </Link>
+                    </div>
+                  )}
                 </div>
 
                 {/* Free Training Button */}
