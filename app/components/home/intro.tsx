@@ -6,7 +6,7 @@ import React from "react";
 function Intro() {
   return (
     <section id="intro" className="bg-[var(--primary)]/30 py-20">
-      <div className="max-w-7xl mx-auto px-10 md:px-12">
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <div className="text-sm font-bold mb-4 tracking-wide">HEYY!</div>

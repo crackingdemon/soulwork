@@ -7,6 +7,10 @@ import OptIn from "./components/home/opt-in";
 import Intro from "./components/home/intro";
 import SocialProof from "./components/home/social-proof";
 import Podcast from "./components/home/podcast";
+import Ascent from "./components/home/ascent";
+import Testimonials from "./components/home/testimonials";
+import WatchRead from "./components/home/watch-read";
+import AdiSpeaks from "./components/home/adi-speaks";
 
 export default function Home() {
   return (
@@ -29,7 +33,7 @@ export default function Home() {
           playsInline
         />
         {/* Overlay (optional for better text contrast) */}
-        <div className="absolute inset-0 bg-black/50 -z-10"></div>x
+        <div className="absolute inset-0 bg-black/50 -z-10"></div>
         {/* Content */}
         <div className="text-center max-w-4xl mx-auto px-6 relative z-10 playfair">
           <h1 className="text-4xl sm:text-6xl  font-light leading-tight mb-8">
@@ -53,7 +57,12 @@ export default function Home() {
 
       <SocialProof />
 
+      <Ascent />
+      <WatchRead />
+      <AdiSpeaks />
       <Podcast />
+
+      <Testimonials />
     </div>
   );
 }
