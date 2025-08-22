@@ -1,45 +1,40 @@
-import Image from "next/image";
+"use client";
 import React from "react";
+import { AnimatedTestimonials } from "../ui/animated-testimonial";
 
 function AdiSpeaks() {
+  const testimonials = [
+    {
+      quote:
+        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+      src: "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/d9748400-07c1-4f82-ac51-9211537ea068/IMG_7309.jpg?format=2500w",
+    },
+    {
+      quote:
+        " Adi Shaktis mission is to guide seekers and holistic entrepreneurs to deepen their spiritual life, achieve excellence in their entrepreneurial pursuits, and give forward with soul",
+      src: "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/cc0ba4db-59e5-4182-b48b-66a855dd9672/Crania_SoulCamp_501.jpg?format=1000w",
+    },
+    {
+      quote:
+        " On Adi Shakti Speaks, Adi shares powerful stories + teachings on spirituality, entrepreneurship, relationships, feminine leadership, and personal transformation. ",
+      name: "Emily Watson",
+      designation: "Operations Director at CloudScale",
+      src: "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/5338ce71-4ce7-4220-a28b-a1372cc2b5de/Crania_SoulCamp_177.jpg?format=1000w",
+    },
+    {
+      quote:
+        "With honesty, depth, and a touch of fire, Adi Shakti Speaks offers actionable insights and soulful inspiration to help you build a life and business that is not only successful, but profoundly meaningful.",
+      src: "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/88f5b8bd-4395-4585-80c4-1a685ac034f2/Screen+Shot+2024-01-27+at+12.27.05+PM.png?format=2500w",
+    },
+  ];
   return (
-    <div className="bg-[var(--secondary)] py-20 px-4" id="ascent">
+    <div className="bg-[var(--secondary)] py-20 px-4">
       <h1 className="text-white text-center mb-10  text-4xl sm:text-4xl md:text-5xl font-semibold ">
         Adi <em className="italic text-[var(--primary)] ">Speaks</em>
       </h1>
 
       <div className="max-w-7xl mx-auto px-8 md:px-12">
-        <div className="grid md:grid-cols-2 ">
-          <div className="text-white md:mt-10 space-y-5 md:text-lg">
-            <p>
-              Known as an OG visionary in soul-centered leadership and the
-              founder of SoulWork,{" "}
-              <span className="font-semibold">
-                Adi Shakti&apos;s mission is to guide seekers and holistic
-                entrepreneurs to deepen their spiritual life, achieve excellence
-                in their entrepreneurial pursuits, and give forward with soul.
-              </span>{" "}
-            </p>
-            <p>
-              On <em className="text-[var(--primary)]">Adi Shakti Speaks</em>,
-              Adi shares powerful stories + teachings on spirituality,
-              entrepreneurship, relationships, feminine leadership, and personal
-              transformation. With honesty, depth, and a touch of fire, Adi
-              Shakti Speaks offers actionable insights and soulful inspiration
-              to help you build a life and business that is not only successful,
-              but profoundly meaningful.
-            </p>
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src="https://images.clickfunnels.com/cdn-cgi/image/width=2600,fit=scale-down,f=auto,q=80/https://statics.myclickfunnels.com/workspace/eWrpmV/image/12062402/file/1a572c1976c3ad3daf48b4b03232898f.png"
-              alt="Adi"
-              width={1080}
-              height={1920}
-              className="h-96 object-contain rounded-lg transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-        </div>
+        <AnimatedTestimonials testimonials={testimonials} autoplay={true} />;
       </div>
     </div>
   );

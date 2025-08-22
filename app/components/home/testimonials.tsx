@@ -2,7 +2,7 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <div className="bg-[var(--secondary)] py-20 px-4" id="ascent">
+    <div className="bg-[var(--secondary)] py-20 px-4" id="testimonials">
       <h1 className="text-white text-center  text-4xl sm:text-4xl md:text-5xl font-semibold ">
         Student <em className="italic text-[var(--primary)] ">Experiences</em>
       </h1>
