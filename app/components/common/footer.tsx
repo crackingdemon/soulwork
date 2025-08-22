@@ -30,7 +30,7 @@ function Footer() {
           </Link>
 
           <p className="mt-2 text-sm md:w-2/3">
-            By entering your info, you'll become a SoulWorker and receive
+            By entering your info, you&aspos;ll become a SoulWorker and receive
             updates to your inbox. (Unsububscribe any time) You also agree to
             our Terms of Use and Privacy Policy.
           </p>
