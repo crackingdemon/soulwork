@@ -73,7 +73,8 @@ export default function Navigation() {
                 Film
               </Link>
               <Link
-                href="/#podcast"
+                href="https://podcasts.apple.com/us/podcast/adi-shakti-speaks/id1435719818"
+                target="_blank"
                 className=" hover:text-[#c78067] transition-colors"
               >
                 Podcast
@@ -94,7 +95,10 @@ export default function Navigation() {
                 </Link>
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="py-2">
-                    <Link href="#" className="block px-4 py-2 text-sm ">
+                    <Link
+                      href="/#testimonials"
+                      className="block px-4 py-2 text-sm "
+                    >
                       Testimonials
                     </Link>
                     <Link href="#" className="block px-4 py-2 text-sm ">
@@ -103,7 +107,11 @@ export default function Navigation() {
                     <Link href="#" className="block px-4 py-2 text-sm ">
                       Giving Back
                     </Link>
-                    <Link href="#" className="block px-4 py-2 text-sm ">
+                    <Link
+                      href="https://soulwork.kit.com/cc12e79e3e?fbclid=PAZXh0bgNhZW0CMTEAAacxi0d4BWEYvbZEVchVf4YV-i318ZUhCkaEXWJ7_s9lfLrqImHgy8yINX_0dQ_aem_Nz08utwJnouus1N6kiGs6g"
+                      target="_blank"
+                      className="block px-4 py-2 text-sm "
+                    >
                       Hire Adi to Speak
                     </Link>
                   </div>
@@ -212,7 +220,8 @@ export default function Navigation() {
                 {/* Podcast */}
                 <div>
                   <Link
-                    href="/#podcast"
+                    href="https://podcasts.apple.com/us/podcast/adi-shakti-speaks/id1435719818"
+                    target="_blank"
                     className="block text-lg  text-gray-900 hover:text-[#c78067] transition-colors border-b-[1px] border-b-[#c78067] pb-4"
                   >
                     Podcast
@@ -263,7 +272,8 @@ export default function Navigation() {
                         Giving Back
                       </Link>
                       <Link
-                        href="#"
+                        href="https://soulwork.kit.com/cc12e79e3e?fbclid=PAZXh0bgNhZW0CMTEAAacxi0d4BWEYvbZEVchVf4YV-i318ZUhCkaEXWJ7_s9lfLrqImHgy8yINX_0dQ_aem_Nz08utwJnouus1N6kiGs6g"
+                        target="_blank"
                         className="block text-base  hover:text-gray-900 transition-colors"
                       >
                         Hire Adi to Speak

@@ -5,12 +5,12 @@ import React from "react";
 
 function Watch() {
   return (
-    <section id="" className="bg-[var(--primary)]/33 ">
+    <section id="" className="bg-[var(--primary)]/33 min-h-screen">
       <div className="max-w-7xl mx-auto px-8 sm: md:px-12">
         <div className="grid md:grid-cols-2 gap-2">
           <div className="order-2 md:order-1">
             <Image
-              src={"/watch.png"}
+              src={"/film.svg"}
               width={1080}
               height={1920}
               className="md:-mt-5 h-full object-cover rounded-lg transition-transform duration-300 md:scale-105"
@@ -45,9 +45,13 @@ function Watch() {
             <p className="mt-3 text-lg font-semibold ">
               Coming Soon to streaming platforms
             </p>
-            <Link href={"https://soulwork.kit.com/1e24d8db1f"} target="_blank">
+            <Link
+              href={"https://soulwork.kit.com/1e24d8db1f"}
+              target="_blank"
+              className="w-fit mx-auto"
+            >
               <Button className="cursor-pointer rounded-full text-xl mt-10">
-                Watch
+                Watch Now
               </Button>
             </Link>
           </div>

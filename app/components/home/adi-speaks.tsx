@@ -11,7 +11,7 @@ function AdiSpeaks() {
     },
     {
       quote:
-        " Adi Shaktis mission is to guide seekers and holistic entrepreneurs to deepen their spiritual life, achieve excellence in their entrepreneurial pursuits, and give forward with soul",
+        " Adi Shaktis mission is to guide seekers and holistic entrepreneurs to deepen their spiritual life, achieve excellence in their entrepreneurial pursuits, and give forward with soul.",
       src: "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/cc0ba4db-59e5-4182-b48b-66a855dd9672/Crania_SoulCamp_501.jpg?format=1000w",
     },
     {
@@ -29,11 +29,11 @@ function AdiSpeaks() {
   ];
   return (
     <div className="bg-[var(--secondary)] py-20 px-4">
-      <h1 className="text-white text-center mb-10  text-4xl sm:text-4xl md:text-5xl font-semibold ">
+      <h1 className="text-white text-center mb-10  text-4xl sm:text-4xl md:text-6xl font-semibold ">
         Adi <em className="italic text-[var(--primary)] ">Speaks</em>
       </h1>
 
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+      <div className="max-w-7xl mx-auto px-8 md:px-10">
         <AnimatedTestimonials testimonials={testimonials} autoplay={true} />;
       </div>
     </div>

@@ -45,15 +45,13 @@ function Footer() {
           Film
         </Link>
         <Link
-          href={
-            "https://podcasts.apple.com/us/podcast/adi-shakti-speaks/id1435719818"
-          }
+          href={"https://open.spotify.com/show/0hZis2ct6rQCDykQMNOHe1"}
           target="_blank"
         >
           Podcast
         </Link>
         <Link href={"/about"} target="_blank">
-          Podcast
+          About Me
         </Link>
         <Link href={"/#testimonials"}>Testimonials</Link>
         <Link
