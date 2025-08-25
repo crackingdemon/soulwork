@@ -29,7 +29,7 @@ export default function Home() {
         {/* Background video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-          src="/header.mov"
+          src="/header.MOV"
           autoPlay
           loop
           muted
