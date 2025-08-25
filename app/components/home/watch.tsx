@@ -6,14 +6,14 @@ import React from "react";
 function Watch() {
   return (
     <section id="" className="bg-[var(--primary)]/33 min-h-screen">
-      <div className="max-w-7xl mx-auto px-8  md:px-12">
-        <div className="grid md:grid-cols-2 gap-2 ">
+      <div className="max-w-7xl mx-auto px-8 md:px-12">
+        <div className="grid md:grid-cols-2 gap-2">
           <div className="order-2 md:order-1">
             <Image
               src={"/film.svg"}
               width={1080}
               height={1920}
-              className="md:-mt-5 h-full object-cover rounded-lg transition-transform duration-300 md:scale-105"
+              className="md:-mt-5 h-full md:min-h-screen object-cover rounded-lg transition-transform duration-300 md:scale-105"
               alt="movie"
             />
           </div>
@@ -35,7 +35,7 @@ function Watch() {
                 />
               </div>
             </h2>
-            <p>
+            <p className="text-lg">
               <strong>HEAR</strong>{" "}
               <em className="text-[var(--secondary)]">Adi Shakti&apos;s</em>{" "}
               story + journey through one of her in person immersions, meet the

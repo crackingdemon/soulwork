@@ -11,8 +11,9 @@ import Ascent from "./components/home/ascent";
 import Testimonials from "./components/home/testimonials";
 import AdiSpeaks from "./components/home/adi-speaks";
 import Trust from "./components/home/trust";
-import Read from "./components/home/read";
+// import Read from "./components/home/read";
 import Watch from "./components/home/watch";
+import { Read2 } from "./components/home/read2";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
         {/* Background video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-          src="/header.mp4"
+          src="/header.mov"
           autoPlay
           loop
           muted
@@ -60,7 +61,7 @@ export default function Home() {
       <SocialProof />
 
       <Ascent />
-      <Read />
+      <Read2 />
       <Watch />
       <AdiSpeaks />
       <Podcast />

@@ -50,7 +50,7 @@ function Intro() {
       </div>
 
       {/* Right side - Image */}
-      <div className="relative h-full min-h-[80vh] sm:min-h-screen bg-[var(--primary)]/30 md:min-h-screen">
+      <div className="relative h-full min-h-[70vh] sm:min-h-screen bg-[var(--primary)]/30">
         <Image
           src="/intro.svg"
           alt="Adi"
