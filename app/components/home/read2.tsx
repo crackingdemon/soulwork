@@ -63,7 +63,7 @@ export function Read2() {
                 <source src="/read.mov" type="video/mp4" />
                 {/* Fallback image if video doesn't load */}
                 <img
-                  src="/creator-speaking-about-soulwork-and-personal-growt.png"
+                  src="/film.svg"
                   alt="Creator discussing SoulWork"
                   className="w-full h-full object-cover"
                 />
