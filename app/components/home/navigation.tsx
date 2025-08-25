@@ -117,7 +117,10 @@ export default function Navigation() {
                   </div>
                 </div>
               </div>
-              <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full pb-4 pt-2 border-b-2 border-[var(--primary)] text-lg">
+              <Button
+                className="bg-[var(--secondary)] hover:border-t-2 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full  pt-2 border-b-2 border-[var(--primary)] "
+                size={"lg"}
+              >
                 Free Training
               </Button>
             </div>

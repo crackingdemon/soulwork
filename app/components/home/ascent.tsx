@@ -50,14 +50,19 @@ function Ascent() {
               This is the most intimate and powerful way to work with Adi Shakti
               (other than 1:1).
             </div>
-            <Link
-              href={"https://www.soulwork.online/cart-page-f7b1d"}
-              target="_blank"
-            >
-              <Button className="cursor-pointer mt-5  bg-[var(--primary)] text-white px-8 py-3 rounded-full transition-all duration-200 hover:scale-105">
-                APPLY NOW
-              </Button>
-            </Link>
+            <div className="flex justify-center">
+              <Link
+                href={"https://www.soulwork.online/cart-page-f7b1d"}
+                target="_blank"
+              >
+                <Button
+                  className=" border-[1px] border-[var(--secondary)] hover:border-[var(--primary)] cursor-pointer mt-5  bg-[var(--primary)] text-white px-8 py-3 rounded-full transition-all duration-200 hover:scale-105 hover:bg-[var(--primary)]/90"
+                  size={"lg"}
+                >
+                  APPLY NOW
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

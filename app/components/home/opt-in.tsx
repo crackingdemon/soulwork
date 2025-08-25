@@ -10,7 +10,7 @@ function OptIn() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="free-training" className="bg-[var(--light-primary)] py-20">
+    <section id="free-training" className="bg-[var(--light-primary)] py-14">
       <motion.div
         ref={ref}
         className="max-w-2xl mx-auto text-center px-6"
@@ -18,25 +18,28 @@ function OptIn() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h2 className="text-3xl md:text-4xl font-light mb-4">
+        <h2 className="text-3xl md:text-5xl mb-4 playfair">
           Discover How to Actualize Your{" "}
           <em className="italic font-serif">Spiritual Gifts</em> into Real-World
           Impact.
         </h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 mb-8 text-lg">
           Access <strong>SoulWork 101</strong> for FREE
         </p>
 
         {/* ConvertKit Opt-in Form */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="grid gap-4">
           <Input
             type="email"
             name="email_address"
             placeholder="Enter your email"
-            className="px-4 py-3 border border-black w-full sm:w-auto flex-grow outline-none rounded-none bg-white "
+            className="px-4 py-5 border border-black w-full sm:w-auto flex-grow outline-none rounded-none bg-white placeholder:text-lg placeholder:text-black "
           />
           <Link href={"https://soulwork.kit.com/6ecb3fe716"} target="_blank">
-            <Button className="bg-[var(--secondary)] hover:border-t-4 hover:border-b-0 text-white font-medium px-4 py-2 rounded-full border-b-4 border-black text-lg cursor-pointer">
+            <Button
+              className="bg-[var(--primary)]/80 border-[1px] border-[var(--secondary)] uppercase w-full text-white px-4 py-2 rounded-full cursor-pointer transition-colors duration-200"
+              size={"lg"}
+            >
               Get Free Training
             </Button>
           </Link>

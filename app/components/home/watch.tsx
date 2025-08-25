@@ -6,8 +6,8 @@ import React from "react";
 function Watch() {
   return (
     <section id="" className="bg-[var(--primary)]/33 min-h-screen">
-      <div className="max-w-7xl mx-auto px-8 sm: md:px-12">
-        <div className="grid md:grid-cols-2 gap-2">
+      <div className="max-w-7xl mx-auto px-8  md:px-12">
+        <div className="grid md:grid-cols-2 gap-2 ">
           <div className="order-2 md:order-1">
             <Image
               src={"/film.svg"}
@@ -50,7 +50,10 @@ function Watch() {
               target="_blank"
               className="w-fit mx-auto"
             >
-              <Button className="cursor-pointer rounded-full text-xl mt-10">
+              <Button
+                className="border-[1px] border-[var(--secondary)]  cursor-pointer mt-5  bg-[var(--primary)] text-white px-8 py-3 rounded-full transition-all duration-200 hover:scale-105 hover:bg-[var(--primary)]/90 uppercase"
+                size={"lg"}
+              >
                 Watch Now
               </Button>
             </Link>

@@ -15,7 +15,7 @@ function SocialProof() {
         <Image
           width={1080}
           height={1920}
-          className="h-full w-fit mx-auto rounded-lg mb-2 hover:scale-105 transition-transform duration-200"
+          className="h-full w-fit mx-auto rounded-lg mb-5 hover:scale-105 transition-transform duration-200"
           alt=""
           src={
             "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/d9748400-07c1-4f82-ac51-9211537ea068/IMG_7309.jpg?format=2500w"

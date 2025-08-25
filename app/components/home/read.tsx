@@ -5,10 +5,10 @@ import React from "react";
 
 function Read() {
   return (
-    <section id="" className="bg-[var(--primary)]/20 pb-20 min-h-[90vh] ">
-      <div className="max-w-8xl mx-auto px-8 md:px-12 relative -top-5">
+    <section id="" className="bg-[var(--primary)]/20 py-20 min-h-[90vh] ">
+      <div className="max-w-8xl mx-auto px-8 md:px-12">
         <div className="flex flex-col md:flex-row justify-center items-center ">
-          <div className="flex flex-col justify-around mb-4 w-full md:w-1/2 text-center bg-white py-10 border-[1px] border-[var(--secondary)]/60 px-8 rounded-3xl md:h-[29rem]">
+          <div className="flex flex-col justify-around mb-4 w-full md:w-1/2 text-center bg-white py-10 border-[1px] border-[var(--secondary)]/60 px-8 rounded-3xl ">
             <h1 className="text-3xl md:text-4xl text-[var(--secondary)] playfair !font-bold">
               Post Traumatic Growth through the SoulWork Lens
             </h1>
@@ -24,7 +24,10 @@ function Read() {
             </p>
             <p className="mt-3 text-xl font-semibold">Coming Soon!</p>
             <Link href={"https://soulwork.kit.com/71b766c940"} target="_blank">
-              <Button className="cursor-pointer rounded-full text-xl mt-10">
+              <Button
+                className="bg-[var(--primary)] border-[1px] border-[var(--secondary)] hover:border-[var(--primary)] hover:bg-[var(--secondary)] mt-2 text-white font-medium px-4 py-2 rounded-full cursor-pointer transition-colors duration-200"
+                size={"lg"}
+              >
                 ORDER YOUR COPY
               </Button>
             </Link>

@@ -28,7 +28,7 @@ export default function Home() {
         {/* Background video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-          src="https://videos.pexels.com/video-files/7414972/7414972-uhd_2732_1440_24fps.mp4"
+          src="/header.mp4"
           autoPlay
           loop
           muted
