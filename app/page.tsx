@@ -38,9 +38,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50 -z-10"></div>
         {/* Content */}
         <div className="text-center max-w-4xl mx-auto px-6 relative z-10 playfair">
-          <h1 className="text-4xl sm:text-6xl  font-light leading-tight mb-8">
-            Welcome to the journey from your Soul to your{" "}
-            <em className="italic font-serif text-[#ffcac7] underline">Work</em>
+          <h1 className="text-4xl sm:text-7xl  font-light leading-tight mb-8">
+            Meet the Philanthropic{" "}
+            <em className="italic font-serif text-[#ffcac7] underline">
+              Femme
+            </em>
           </h1>
         </div>
         {/* Scroll down icon */}
