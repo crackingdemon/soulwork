@@ -9,7 +9,7 @@ function Footer() {
     <div className="bg-[var(--secondary)] text-white py-20 px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="space-y-4">
         <div>
-          <Image src={"/logo.png"} width={200} height={200} alt="logo" />
+          <Image src={"/logo2.jpeg"} width={200} height={200} alt="logo" />
         </div>
         <p className="mt-3 md:text-lg">
           Discover How to Actualize Your{" "}

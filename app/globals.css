@@ -138,7 +138,7 @@ html {
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
+  height: 100%;
   overflow: hidden;
 }
 .video-container iframe {

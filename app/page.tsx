@@ -11,9 +11,10 @@ import Ascent from "./components/home/ascent";
 import Testimonials from "./components/home/testimonials";
 import AdiSpeaks from "./components/home/adi-speaks";
 import Trust from "./components/home/trust";
-// import Read from "./components/home/read";
+import Read from "./components/home/read";
 import Watch from "./components/home/watch";
-import { Read2 } from "./components/home/read2";
+import Read2 from "./components/home/read2";
+import Podcast2 from "./components/home/podcast2";
 
 export default function Home() {
   return (
@@ -60,11 +61,11 @@ export default function Home() {
 
       <SocialProof />
 
-      <Ascent />
-      <Read2 />
       <Watch />
+      <Read2 />
+      <Ascent />
+      <Podcast2 />
       <AdiSpeaks />
-      <Podcast />
 
       <Testimonials />
       <Trust />

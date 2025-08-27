@@ -19,7 +19,7 @@ function Intro() {
             <br />
             ADI Shakti.
           </h2>
-          <div className="text-gray-700 mb-6 leading-relaxed space-y-4">
+          <div className="md:text-lg mb-6 leading-relaxed space-y-2">
             <p>
               You found me, and I am so thankful you are here. I have a feeling
               you will feel the same way soon.

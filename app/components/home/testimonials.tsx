@@ -1,16 +1,17 @@
 import React from "react";
+import { TestimonialCarousel } from "./carousel";
 
 function Testimonials() {
   return (
-    <div className="bg-[var(--secondary)] py-20 px-4" id="testimonials">
-      <h1 className="text-white text-center  text-4xl sm:text-4xl md:text-5xl font-semibold ">
+    <div className="bg-[var(--primary)]/20 py-20 px-4" id="testimonials">
+      <h1 className=" text-center text-4xl sm:text-4xl md:text-5xl font-semibold ">
         Student <em className="italic text-[var(--primary)] ">Experiences</em>
       </h1>
-      <p className="mb-14 text-center text-gray-200 mt-2 italic">
+      <p className="mb-14 text-center  mt-2 italic">
         &quot;OUR STUDENTS NEVER LEAVE&quot;
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="video-container">
           <iframe
             src="https://player.vimeo.com/video/898635074"
@@ -53,7 +54,9 @@ function Testimonials() {
             allowFullScreen
           ></iframe>
         </div>
-      </div>
+      </div> */}
+
+      <TestimonialCarousel />
     </div>
   );
 }
