@@ -1,11 +1,12 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 function Read2() {
   return (
     <section id="" className="bg-[var(--primary)]/5  min-h-screen p-5 md:p-10">
-      <div className="max-w-8xl mx-auto px-8 md:px-20 grid grid-cols-1 py-10 md:py-20 min-h-dvh bg-[var(--primary)]/10 md:grid-cols-2 ">
+      <div className="rounded-md max-w-8xl mx-auto px-8 md:px-20 grid grid-cols-1 py-10 md:py-20 min-h-dvh bg-[var(--primary)]/10 md:grid-cols-2 ">
         <div className="flex flex-col space-y-5">
           <h1 className="text-lg uppercase font-semibold">The book</h1>
           <h1 className="text-3xl md:text-5xl  playfair">
@@ -32,16 +33,14 @@ function Read2() {
           </Link>
         </div>
 
-        <div className="mt-4 md:mt-0 md:p-14 flex items-start">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full rounded-md h-full object-cover"
-          >
-            <source src="/read.mov" type="video/mp4" />
-          </video>
+        <div className="mt-4 md:mt-0 md:px-14 relative flex items-start justify-center">
+          <Image
+            src={"/book.jpeg"}
+            height={1000}
+            width={1000}
+            alt="book"
+            className="w-fit h-[400px] md:h-[500px] shadow-left"
+          />
         </div>
       </div>
     </section>

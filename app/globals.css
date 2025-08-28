@@ -149,6 +149,9 @@ html {
   height: 100%;
 }
 
+.shadow-left {
+  box-shadow: -10px 0 15px -5px rgba(0, 0, 0, 0.8); /* adjust values as needed */
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
