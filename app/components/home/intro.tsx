@@ -55,7 +55,7 @@ function Intro() {
           src="/intro.svg"
           alt="Adi"
           fill
-          className="object-contain sm:object-cover object-bottom md:object-center"
+          className="object-contain sm:object-cover object-bottom md:object-center z-1"
           priority
         />
       </div>

@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -16,7 +17,7 @@ function Podcast2() {
         <source src="/podcast.mov" type="video/mp4" />
       </video>
       <div
-        className="bg-[var(--pre-primary)]/30 pb-10 -mt-10 px-5 flex flex-col md:flex-row items-center justify-center"
+        className="bg-[var(--pre-primary)]/30 pb-14 -mt-10 px-5 flex flex-col md:flex-row items-center justify-center"
         id="podcast"
       >
         <div className="md:-rotate-3 md:translate-x-3 z-1 shadow-sm rounded-md">
@@ -32,7 +33,7 @@ function Podcast2() {
             src="https://embed.podcasts.apple.com/us/podcast/adi-shakti-speaks/id1435719818"
           ></iframe>
         </div>
-        <div className="w-full text-center max-w-[700px] mt-2 md:leading-7 bg-[#f8f8fa] md:text-lg h-fit p-10 border-[1px] border-[var(--secondary)] rounded-2xl mb-1 relative">
+        <div className="w-full text-center max-w-[700px] mt-2 md:leading-7 bg-[#f8f8fa] md:text-lg h-fit p-10 py-14 border-[1px] border-[var(--secondary)] rounded-2xl mb-1 relative">
           <Image
             src={"/airpods.png"}
             width={100}
@@ -40,15 +41,15 @@ function Podcast2() {
             alt="airpods"
             className="absolute -bottom-5 -right-5"
           />
-          <h1 className="text-2xl font-medium md:text-4xl mb-5 md:mb-10">
+          <h1 className="text-2xl font-medium md:text-4xl mb-5">
             Adi Shakti{" "}
             <span className="text-[var(--primary)] uppercase italic">
               Speaks
             </span>{" "}
             - THE PODCAST
           </h1>
-          <p>
-            <span className="text-[var(--primary)] font-medium">
+          <p className="leading-8.5">
+            <span className="text-[var(--primary)] font-medium ">
               {" "}
               Adi Shakti
             </span>{" "}
@@ -59,9 +60,9 @@ function Podcast2() {
             Companies—businesses rooted in spiritual depth, committed
             leadership, business excellence, and dedicated philanthropy.
           </p>
-          <div className="flex flex-col items-center justify-center mt-5">
+          <div className="flex flex-col items-center justify-center mt-8">
             <h1 className="text-xl font-semibold italic">Listen on :</h1>
-            <div className="flex space-x-2 mt-2">
+            <div className="flex space-x-2 mt-4">
               <Link
                 href={"https://open.spotify.com/show/0hZis2ct6rQCDykQMNOHe1"}
                 target="_blank"
@@ -94,7 +95,157 @@ function Podcast2() {
           </div>
         </div>
       </div>
-      <div className="bg-[var(--pre-primary)]/30">Latest Episodes</div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 px-4 gap-20 pt-4 pb-0 bg-[var(--pre-primary)]/30 sm:px-10 md:px-20 min-h-screen">
+        <div className="relative h-full min-h-[70vh] sm:min-h-screen">
+          <Image
+            src="/latest-podcast.svg"
+            alt="Adi"
+            fill
+            className="object-contain sm:object-cover object-bottom md:object-center z-1"
+            priority
+          />
+        </div>
+        {/* <div className="col-span-1 h-full">
+          <Image
+            src={"/latest-podcast.svg"}
+            width={1080}
+            height={1920}
+            alt="movie"
+            className="hidden md:block w-full h-full object-top"
+          />
+        </div> */}
+
+        <div className="col-span-2 flex flex-col justify-center playfair-bold pb-10 ">
+          <h1 className="md:text-center text-5xl md:mt-0 mb-10">The Latest</h1>
+
+          <div className="text-black text-2xl md:text-3xl">
+            <Link
+              className="pt-4 pb-8 border-b-[1px] border-b-[var(--primary)] flex justify-between relative group"
+              href={
+                "https://soulwork.libsyn.com/s3e9-the-almighty-teaching-from-adi-shakti-herself"
+              }
+              target="_blank"
+            >
+              <span className="absolute text-sm bottom-2 text-[var(--primary)]">
+                S3:E9
+              </span>
+              <span className="transition-transform duration-200 group-hover:translate-x-5">
+                The Almighty Teaching from Adi Shakti herself
+              </span>
+              <Image
+                src={"/playbutton.png"}
+                width={60}
+                height={60}
+                alt="playbutton"
+                className="hidden md:block"
+              />
+            </Link>
+            <Link
+              className="pt-4 pb-8 border-b-[1px] border-b-[var(--primary)] flex justify-between relative group"
+              href={
+                "https://soulwork.libsyn.com/s3e8-visibility-as-spiritual-initiation-not-marketing-strategy"
+              }
+              target="_blank"
+            >
+              <span className="absolute text-sm bottom-2 text-[var(--primary)]">
+                S3:E8
+              </span>
+              <span className="transition-transform duration-200 group-hover:translate-x-5">
+                {" "}
+                Visibility as Spiritual Initiation; Not Marketing Strategy
+              </span>
+              <Image
+                src={"/playbutton.png"}
+                width={60}
+                height={60}
+                alt="playbutton"
+                className="hidden md:block"
+              />
+            </Link>
+            <Link
+              href={
+                "https://soulwork.libsyn.com/s3e7-the-camp-soul-success-case-study"
+              }
+              target="_blank"
+              className="pt-4 pb-8 border-b-[1px] border-b-[var(--primary)] flex justify-between relative group"
+            >
+              <span className="absolute text-sm bottom-2 text-[var(--primary)]">
+                S3:E7
+              </span>
+              <span className="transition-transform duration-200 group-hover:translate-x-5">
+                {" "}
+                The Camp Soul Success Case Study
+              </span>
+              <Image
+                src={"/playbutton.png"}
+                width={60}
+                height={60}
+                alt="playbutton"
+                className="hidden md:block"
+              />
+            </Link>
+
+            <Link
+              href={
+                "https://soulwork.libsyn.com/s3-e6-the-aligned-path-of-least-resistance-day-one"
+              }
+              target="_blank"
+              className="pt-4 pb-8 border-b-[1px] border-b-[var(--primary)] flex justify-between relative group"
+            >
+              <span className="absolute text-sm bottom-2 text-[var(--primary)]">
+                S3:E6
+              </span>
+              <span className="transition-transform duration-200 group-hover:translate-x-5">
+                The Aligned Path of Least Resistance {"("}Day One{")"}
+              </span>
+              <Image
+                src={"/playbutton.png"}
+                width={60}
+                height={60}
+                alt="playbutton"
+                className="hidden md:block"
+              />
+            </Link>
+            <Link
+              href={
+                "https://soulwork.libsyn.com/s3e5-from-broke-servant-to-dharmic-steward-my-story"
+              }
+              target="_blank"
+              className="pt-4 pb-8 border-b-[1px] border-b-[var(--primary)] flex justify-between relative group"
+            >
+              <span className="absolute text-sm bottom-2 text-[var(--primary)]">
+                S3:E5
+              </span>
+              <span className="transition-transform duration-200 group-hover:translate-x-5">
+                From Broke Servant to Dharmic Steward: My story
+              </span>
+              <Image
+                src={"/playbutton.png"}
+                width={60}
+                height={60}
+                alt="playbutton"
+                className="hidden md:block"
+              />
+            </Link>
+            <div className="flex justify-center">
+              <Link
+                href={
+                  "https://podcasts.apple.com/us/podcast/adi-shakti-speaks/id1435719818"
+                }
+                target="_blank"
+              >
+                <Button
+                  className=" border-[1px] border-[var(--secondary)] hover:border-[var(--primary)] cursor-pointer mt-5  bg-[var(--primary)] text-white px-8 py-3 rounded-full transition-all duration-200 hover:scale-105 hover:bg-[var(--primary)]/90"
+                  size={"lg"}
+                >
+                  View All Episodes
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

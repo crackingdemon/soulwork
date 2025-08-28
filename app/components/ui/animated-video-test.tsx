@@ -48,7 +48,7 @@ export const AnimatedTestimonials2 = ({
   };
   if (isClient) {
     return (
-      <div className="mx-auto max-w-md px-4 py-10 md:py-10 font-sans antialiased md:max-w-5xl md:px-8 lg:px-12 bg-[var(--pre-primary)]/40">
+      <div className="mx-auto max-w-md px-6 py-10 md:py-10 font-sans antialiased md:max-w-5xl md:px-8 lg:px-12 bg-[var(--pre-primary)]/40">
         <div className="relative grid grid-cols-1 gap-10 md:gap-20 md:grid-cols-2">
           <div>
             <div className="relative h-80 md:h-96 w-full">

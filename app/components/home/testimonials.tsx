@@ -68,51 +68,6 @@ function Testimonials() {
         &quot;OUR STUDENTS NEVER LEAVE&quot;
       </p>
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="video-container">
-          <iframe
-            src="https://player.vimeo.com/video/898635074"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-container">
-          <iframe
-            src="https://player.vimeo.com/video/898635098"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-container">
-          <iframe
-            src="https://player.vimeo.com/video/179375027?h=323d3d72c2"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-container">
-          <iframe
-            src="https://player.vimeo.com/video/179375013?h=8b062a123f"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-container">
-          <iframe
-            src="https://player.vimeo.com/video/203938433?h=3ffad5b697"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="video-container">
-          <iframe
-            src="https://player.vimeo.com/video/203993502?h=54d09888ea"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div> */}
-
       <AnimatedTestimonials2 testimonials={testimonials} />
     </div>
   );
