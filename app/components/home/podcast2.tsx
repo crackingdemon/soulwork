@@ -96,30 +96,21 @@ function Podcast2() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 px-4 gap-20 pt-4 pb-0 bg-[var(--pre-primary)]/30 sm:px-10 md:px-20 min-h-screen">
-        <div className="relative h-full min-h-[70vh] sm:min-h-screen">
-          <Image
-            src="/latest-podcast.svg"
-            alt="Adi"
-            fill
-            className="object-contain sm:object-cover object-bottom md:object-center z-1"
-            priority
-          />
-        </div>
-        {/* <div className="col-span-1 h-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 px-4 gap-2 md:gap-20 pt-4 pb-0 bg-[var(--pre-primary)]/30 sm:px-10 md:px-20 min-h-screen">
+        <div className="col-span-1 h-full">
           <Image
             src={"/latest-podcast.svg"}
             width={1080}
             height={1920}
             alt="movie"
-            className="hidden md:block w-full h-full object-top"
+            className="hidden md:block w-full min-h-80 object-contain"
           />
-        </div> */}
+        </div>
 
         <div className="col-span-2 flex flex-col justify-center playfair-bold pb-10 ">
           <h1 className="md:text-center text-5xl md:mt-0 mb-10">The Latest</h1>
 
-          <div className="text-black text-2xl md:text-3xl">
+          <div className="text-black text-2xl sm:text-2xl  md:text-3xl">
             <Link
               className="pt-4 pb-8 border-b-[1px] border-b-[var(--primary)] flex justify-between relative group"
               href={
