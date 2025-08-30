@@ -11,7 +11,7 @@ function ImageGallery() {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-auto md:px-20"
+      className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:w-3/4 md:w-2/3 mx-auto mt-4"
     >
       <div>
         <Image

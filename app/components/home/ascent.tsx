@@ -26,9 +26,12 @@ function Ascent() {
           </div>
           <div className="text-white">
             <div className="pt-4 pb-6 border-b-[1px] border-b-[var(--primary)] hover:scale-105 transition-transform duration-200">
-              ✨ The ASCENT is Adi Shakti&apos;s inner circle mastermind for
-              holistic entrepreneurs who are ready to channel their spiritual
-              gifts into impactful, thriving businesses.
+              ✨ The ASCENT - Adi Shakti&apos;s 12 month Inner Circle MasterMind
+              for Philanthropic Femme's building Dharmic Legacy Brands
+            </div>
+            <div className="pt-4 pb-6 border-b-[1px] border-b-[var(--primary)] hover:scale-105 transition-transform duration-200">
+              This is the most intimate and powerful way to work with Adi Shakti
+              (other than 1:1).
             </div>
             <div className="pt-4 pb-6 border-b-[1px] border-b-[var(--primary)] hover:scale-105 transition-transform duration-200">
               This year-long experience + commitment combines in-person
@@ -46,10 +49,7 @@ function Ascent() {
               integral leadership, and expand your capacity for wealth,
               influence and service.
             </div>
-            <div className="pt-4 pb-6 border-b-[1px] border-b-[var(--primary)] hover:scale-105 transition-transform duration-200">
-              This is the most intimate and powerful way to work with Adi Shakti
-              (other than 1:1).
-            </div>
+
             <div className="flex justify-center">
               <Link
                 href={"https://www.soulwork.online/cart-page-f7b1d"}

@@ -19,12 +19,14 @@ function OptIn() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="text-3xl md:text-5xl mb-4 playfair">
-          Discover How to Actualize Your{" "}
-          <em className="italic font-serif">Spiritual Gifts</em> into Real-World
-          Impact.
+          Join SoulWork&apos;s{" "}
+          <em className="italic font-serif">Philanthropic Femme</em> Movement
         </h2>
-        <p className="text-gray-600 mb-8 text-lg">
-          Access <strong>SoulWork 101</strong> for FREE
+        <p className="mb-8 text-lg">
+          Get INSTANT ACCESS to the facilitation skills + business foundations
+          that scaled a{" "}
+          <em className="italic font-semibold">multi-million dollar company</em>{" "}
+          rooted in spiritual depth.
         </p>
 
         {/* ConvertKit Opt-in Form */}

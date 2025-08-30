@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kavoon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
 @import "tailwindcss";
 
 @import "tw-animate-css";
@@ -135,6 +136,12 @@
 .kavoon {
   font-family: "Kavoon", serif;
   font-weight: 400;
+  font-style: normal;
+}
+
+.rochester {
+  font-family: "Rochester", cursive;
+  font-weight: 500;
   font-style: normal;
 }
 

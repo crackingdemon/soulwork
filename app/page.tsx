@@ -39,12 +39,9 @@ export default function Home() {
         {/* Overlay (optional for better text contrast) */}
         <div className="absolute inset-0 bg-black/50 -z-10"></div>
         {/* Content */}
-        <div className="text-center max-w-4xl mx-auto px-6 relative z-10 playfair">
+        <div className="text-center max-w-4xl mx-auto px-6 relative z-10 rochester">
           <h1 className="text-4xl sm:text-7xl  font-light leading-tight mb-8">
-            Meet the Philanthropic{" "}
-            <em className="italic font-serif text-[#ffcac7] underline">
-              Femme
-            </em>
+            Meet the <span>Philanthropic Femme</span>
           </h1>
         </div>
         {/* Scroll down icon */}
@@ -59,10 +56,8 @@ export default function Home() {
 
       <Intro />
 
-      <SocialProof />
-
-      <Watch />
       <Read2 />
+      <Watch />
       <Ascent />
       <Podcast2 />
       <AdiSpeaks />

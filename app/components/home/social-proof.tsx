@@ -21,7 +21,6 @@ function SocialProof() {
             "https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/d9748400-07c1-4f82-ac51-9211537ea068/IMG_7309.jpg?format=2500w"
           }
         />
-        <ImageGallery />
         <p className="text-center text-white mt-8 text-xl md:text-3xl w-full md:w-1/2 mx-auto">
           <span className="text-[var(--primary)]">Adi Shakti</span> has trained
           over 3,000+ Trauma Informed Yoga Teachers + Facilitators globally

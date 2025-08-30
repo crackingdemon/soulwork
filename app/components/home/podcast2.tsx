@@ -53,12 +53,11 @@ function Podcast2() {
               {" "}
               Adi Shakti
             </span>{" "}
-            Speaks is a podcast for facilitators, spiritual entrepreneurs, and
-            leaders ready to build businesses that are both impactful and
-            aligned with their deepest values. Hosted by Adi Shakti, founder of
-            SoulWork, this show explores the path of creating Dharmic Legacy
-            Companies—businesses rooted in spiritual depth, committed
-            leadership, business excellence, and dedicated philanthropy.
+            Speaks is a podcast where I share my wisdom on building a
+            multi-seven-figure, Dharmic Legacy business—one rooted in spiritual
+            depth, philanthropy, and business excellence. My ideas inspire
+            facilitators, spiritual entrepreneurs, and Philanthropic Femmes to
+            grow companies that are deep in roots and wide in reach.
           </p>
           <div className="flex flex-col items-center justify-center mt-8">
             <h1 className="text-xl font-semibold italic">Listen on :</h1>

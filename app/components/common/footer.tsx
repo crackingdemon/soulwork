@@ -9,12 +9,17 @@ function Footer() {
     <div className="bg-[var(--secondary)] text-white py-20 px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="space-y-4">
         <div>
-          <Image src={"/logo2.jpeg"} width={200} height={200} alt="logo" />
+          <Image src={"/logo.png"} width={200} height={200} alt="logo" />
         </div>
-        <p className="mt-3 md:text-lg">
-          Discover How to Actualize Your{" "}
-          <em className="font-semibold">Spiritual Gifts</em> into Real-World
-          Impact.
+        <h2 className="text-xl md:text-3xl mb-4 playfair">
+          Join SoulWork&apos;s{" "}
+          <em className="italic font-serif">Philanthropic Femme</em> Movement
+        </h2>
+        <p className="mb-4 ">
+          Get INSTANT ACCESS to the facilitation skills + business foundations
+          that scaled a{" "}
+          <em className="italic font-semibold">multi-million dollar company</em>{" "}
+          rooted in spiritual depth.
         </p>
         <div className="space-y-5">
           <Input
@@ -29,8 +34,8 @@ function Footer() {
             </Button>
           </Link>
 
-          <p className="mt-2 text-sm md:w-2/3">
-            By entering your info, you&aspos;ll become a SoulWorker and receive
+          <p className="mt-2 text-xs md:w-2/3">
+            By entering your info, you&apos;ll become a SoulWorker and receive
             updates to your inbox. (Unsububscribe any time) You also agree to
             our Terms of Use and Privacy Policy.
           </p>
