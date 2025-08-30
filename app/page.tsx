@@ -5,18 +5,21 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import OptIn from "./components/home/opt-in";
 import Intro from "./components/home/intro";
-import SocialProof from "./components/home/social-proof";
-import Podcast from "./components/home/podcast";
 import Ascent from "./components/home/ascent";
 import Testimonials from "./components/home/testimonials";
 import AdiSpeaks from "./components/home/adi-speaks";
 import Trust from "./components/home/trust";
-import Read from "./components/home/read";
 import Watch from "./components/home/watch";
 import Read2 from "./components/home/read2";
 import Podcast2 from "./components/home/podcast2";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
+import { paths } from "../lib/constant";
 
 export default function Home() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { margin: "-100px" });
+
   return (
     <div className="min-h-screen">
       <SmoothScroll />
@@ -39,10 +42,28 @@ export default function Home() {
         {/* Overlay (optional for better text contrast) */}
         <div className="absolute inset-0 bg-black/50 -z-10"></div>
         {/* Content */}
-        <div className="text-center max-w-4xl mx-auto px-6 relative z-10 rochester">
-          <h1 className="text-4xl sm:text-7xl  font-light leading-tight mb-8">
-            Meet the <span>Philanthropic Femme</span>
-          </h1>
+        <div
+          ref={ref}
+          className="flex justify-center items-center mx-auto px-6 relative z-10"
+        >
+          <motion.svg
+            style={{ transformOrigin: "center" }}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 200"
+            className="w-full mx-auto md:scale-200"
+            fill="none"
+            stroke="white"
+            strokeWidth={2}
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <motion.path
+              d={paths}
+              initial={{ pathLength: 0 }}
+              animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
+              transition={{ duration: 3, ease: "easeInOut" }}
+            />
+          </motion.svg>
         </div>
         {/* Scroll down icon */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
