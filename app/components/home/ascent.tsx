@@ -27,7 +27,7 @@ function Ascent() {
           <div className="text-white">
             <div className="pt-4 pb-6 border-b-[1px] border-b-[var(--primary)] hover:scale-105 transition-transform duration-200">
               ✨ The ASCENT - Adi Shakti&apos;s 12 month Inner Circle MasterMind
-              for Philanthropic Femme's building Dharmic Legacy Brands
+              for Philanthropic Femme&apos;s building Dharmic Legacy Brands
             </div>
             <div className="pt-4 pb-6 border-b-[1px] border-b-[var(--primary)] hover:scale-105 transition-transform duration-200">
               This is the most intimate and powerful way to work with Adi Shakti
