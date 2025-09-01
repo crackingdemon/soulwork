@@ -1,5 +1,4 @@
 import React from "react";
-import ImageGallery from "./image-gallery";
 import Image from "next/image";
 
 function SocialProof() {

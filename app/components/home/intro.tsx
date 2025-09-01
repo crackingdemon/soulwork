@@ -9,11 +9,8 @@ function Intro() {
       className="min-h-screen grid grid-cols-1 lg:grid-cols-2"
     >
       {/* Left side - Text content */}
-      <div className="bg-[var(--primary)]/30 flex items-center justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-0">
+      <div className="bg-[var(--primary)]/20 flex items-center justify-center px-8 md:px-12 lg:px-16 py-12 lg:py-0">
         <div className="max-w-lg">
-          <div className="text-sm font-bold mb-4 tracking-wide text-gray-800">
-            HEYY!
-          </div>
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-light mb-6 leading-tight playfair text-gray-900">
             I&apos;M
             <br />
@@ -50,7 +47,7 @@ function Intro() {
       </div>
 
       {/* Right side - Image */}
-      <div className="relative h-full min-h-[70vh] sm:min-h-screen bg-[var(--primary)]/30">
+      <div className="relative h-full min-h-[70vh] sm:min-h-screen bg-[var(--primary)]/20">
         <Image
           src="/intro.svg"
           alt="Adi"

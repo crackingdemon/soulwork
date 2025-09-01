@@ -13,7 +13,7 @@ function TrustGallery() {
         initial={{ opacity: 0, y: 40 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:w-3/4 md:w-2/3 mx-auto "
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto"
       >
         <div>
           <Image
@@ -127,7 +127,7 @@ function TrustGallery() {
 
       <ImageGallery />
 
-      <p className="text-center text-black mt-8 text-xl md:text-3xl w-full md:w-1/2 mx-auto">
+      <p className="text-center text-white mt-8 text-xl md:text-3xl w-full md:w-1/2 mx-auto">
         <em className="text-[var(--primary)]">Adi Shakti</em> has trained over
         3,000+ Trauma Informed Yoga Teachers + Facilitators globally
       </p>

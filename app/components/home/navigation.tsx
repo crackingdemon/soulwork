@@ -38,12 +38,6 @@ export default function Navigation() {
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8 font-medium text-lg">
-              <Link
-                href="#"
-                className=" hover:text-[#c78067] transition-colors"
-              >
-                Blog
-              </Link>
               <div className="relative group">
                 <Link
                   href="#"
@@ -56,12 +50,6 @@ export default function Navigation() {
                   <div className="py-2">
                     <Link href="/#ascent" className="block px-4 py-2 text-sm ">
                       The Ascent
-                    </Link>
-                    <Link href="#" className="block px-4 py-2 text-sm ">
-                      SoulWork Live
-                    </Link>
-                    <Link href="#" className="block px-4 py-2 text-sm ">
-                      Other Events
                     </Link>
                   </div>
                 </div>
@@ -103,16 +91,6 @@ export default function Navigation() {
                     </Link>
                     <Link href="#" className="block px-4 py-2 text-sm ">
                       Media Kit
-                    </Link>
-                    <Link href="#" className="block px-4 py-2 text-sm ">
-                      Giving Back
-                    </Link>
-                    <Link
-                      href="https://soulwork.kit.com/cc12e79e3e?fbclid=PAZXh0bgNhZW0CMTEAAacxi0d4BWEYvbZEVchVf4YV-i318ZUhCkaEXWJ7_s9lfLrqImHgy8yINX_0dQ_aem_Nz08utwJnouus1N6kiGs6g"
-                      target="_blank"
-                      className="block px-4 py-2 text-sm "
-                    >
-                      Hire Adi to Speak
                     </Link>
                   </div>
                 </div>
@@ -194,18 +172,6 @@ export default function Navigation() {
                       >
                         The Ascent
                       </Link>
-                      <Link
-                        href="#"
-                        className="block text-base hover:text-gray-900 transition-colors"
-                      >
-                        SoulWork Live
-                      </Link>
-                      <Link
-                        href="#"
-                        className="block text-base  hover:text-gray-900 transition-colors"
-                      >
-                        Other Events
-                      </Link>
                     </div>
                   )}
                 </div>
@@ -268,24 +234,9 @@ export default function Navigation() {
                       >
                         Media Kit
                       </Link>
-                      <Link
-                        href="#"
-                        className="block text-base hover:text-gray-900 transition-colors"
-                      >
-                        Giving Back
-                      </Link>
-                      <Link
-                        href="https://soulwork.kit.com/cc12e79e3e?fbclid=PAZXh0bgNhZW0CMTEAAacxi0d4BWEYvbZEVchVf4YV-i318ZUhCkaEXWJ7_s9lfLrqImHgy8yINX_0dQ_aem_Nz08utwJnouus1N6kiGs6g"
-                        target="_blank"
-                        className="block text-base  hover:text-gray-900 transition-colors"
-                      >
-                        Hire Adi to Speak
-                      </Link>
                     </div>
                   )}
                 </div>
-
-                {/* Free Training Button */}
               </div>
             </div>
           </div>

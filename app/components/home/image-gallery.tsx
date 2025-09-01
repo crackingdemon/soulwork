@@ -11,7 +11,7 @@ function ImageGallery() {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:w-3/4 md:w-2/3 mx-auto mt-4"
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto mt-4"
     >
       <div>
         <Image
@@ -82,6 +82,15 @@ function ImageGallery() {
           height={1920}
           className="h-full max-w-full rounded-lg"
           src="https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/d4c89b63-0367-48bd-8ff7-76d368f28efb/IMG_7308.jpg?format=1500w"
+          alt=""
+        />
+      </div>
+      <div>
+        <Image
+          width={1080}
+          height={1920}
+          className="h-full max-w-full rounded-lg"
+          src="https://images.squarespace-cdn.com/content/v1/657b9c94cdc58770e06e2c22/d9748400-07c1-4f82-ac51-9211537ea068/IMG_7309.jpg?format=2500w"
           alt=""
         />
       </div>

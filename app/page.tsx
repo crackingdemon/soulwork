@@ -6,19 +6,16 @@ import Link from "next/link";
 import OptIn from "./components/home/opt-in";
 import Intro from "./components/home/intro";
 import Ascent from "./components/home/ascent";
-import Testimonials from "./components/home/testimonials";
-import AdiSpeaks from "./components/home/adi-speaks";
 import Trust from "./components/home/trust";
 import Watch from "./components/home/watch";
 import Read2 from "./components/home/read2";
 import Podcast2 from "./components/home/podcast2";
-import { motion, useInView } from "motion/react";
+import { useInView } from "motion/react";
 import { useRef } from "react";
-import { paths } from "../lib/constant";
 
 export default function Home() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "-100px" });
+  // const isInView = useInView(ref, { margin: "-100px" });
 
   return (
     <div className="min-h-screen">
@@ -46,7 +43,7 @@ export default function Home() {
           ref={ref}
           className="flex justify-center items-center mx-auto px-6 relative z-10"
         >
-          <motion.svg
+          {/* <motion.svg
             style={{ transformOrigin: "center" }}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 500 200"
@@ -63,7 +60,14 @@ export default function Home() {
               animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
               transition={{ duration: 3, ease: "easeInOut" }}
             />
-          </motion.svg>
+          </motion.svg> */}
+          <div className="text-4xl md:text-6xl flex flex-col md:flex-row">
+            <span>Meet the </span>
+            <div className="flex flex-col items-center space-y-2 mt-2 md:mt-0">
+              <span style={{ fontFamily: "Amsterdam One" }}>Philanthropic</span>
+              <span className="text-xl">FEMME</span>
+            </div>
+          </div>
         </div>
         {/* Scroll down icon */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
@@ -81,9 +85,9 @@ export default function Home() {
       <Watch />
       <Ascent />
       <Podcast2 />
-      <AdiSpeaks />
+      {/* <AdiSpeaks /> */}
 
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Trust />
     </div>
   );

@@ -5,20 +5,11 @@ import React from "react";
 
 function Watch() {
   return (
-    <section id="" className="bg-[var(--primary)]/33 min-h-screen">
-      <div className="max-w-7xl mx-auto px-8 md:px-12">
+    <section id="" className="bg-[var(--primary)]/5 min-h-screen p-5 md:p-10">
+      <div className="max-w-8xl mx-auto py-10  px-8 md:px-12 bg-[var(--primary)]/10 rounded-md">
         <div className="grid md:grid-cols-2 gap-2">
-          <div className="order-2 md:order-1">
-            <Image
-              src={"/film.svg"}
-              width={1080}
-              height={1920}
-              className="md:-mt-5 h-full md:min-h-screen object-cover rounded-lg transition-transform duration-300 md:scale-105"
-              alt="movie"
-            />
-          </div>
-          <div className="flex flex-col justify-center mt-4 order-1 md:order-2">
-            <div className="text-sm font-bold mb-4 tracking-wide">
+          <div className="flex flex-col justify-center mt-4 order-2 md:order-1">
+            <div className="text-sm font-bold mb-4 tracking-wide md:ml-4">
               EXPERIENCE
             </div>
             <h2 className="tracking-tighter text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-light mb-6 leading-tight playfair">
@@ -35,7 +26,7 @@ function Watch() {
                 />
               </div>
             </h2>
-            <p className="text-lg">
+            <p className="md:text-lg">
               <strong>HEAR</strong>{" "}
               <em className="text-[var(--secondary)]">Adi Shakti&apos;s</em>{" "}
               story + journey through one of her in person immersions, meet the
@@ -57,6 +48,15 @@ function Watch() {
                 Watch Now
               </Button>
             </Link>
+          </div>
+          <div className="order-1 md:order-2">
+            <Image
+              src={"/film.svg"}
+              width={1080}
+              height={1920}
+              className="md:-mt-5 h-full md:min-h-screen object-cover rounded-lg transition-transform duration-300 md:scale-105"
+              alt="movie"
+            />
           </div>
         </div>
       </div>

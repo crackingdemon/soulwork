@@ -6,7 +6,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="bg-[var(--secondary)] text-white py-20 px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="bg-[var(--secondary)] border-t-[1px] border-gray-500 text-white py-20 px-10 grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="space-y-4">
         <div>
           <Image src={"/logo.png"} width={200} height={200} alt="logo" />
