@@ -5,10 +5,7 @@ import React from "react";
 
 function Ascent() {
   return (
-    <div
-      className="bg-[var(--primary)]/5 min-h-[90vh]] p-5 md:p-10"
-      id="ascent"
-    >
+    <div className="bg-[var(--primary)]/5 p-5 md:p-10" id="ascent">
       <div className="max-w-8xl mx-auto py-10 px-8 md:px-12 bg-[var(--primary)]/10 rounded-md">
         <h1 className="text-center  text-4xl sm:text-4xl md:text-5xl font-semibold ">
           The <em className="italic text-[var(--primary)] ">Ascent</em>
@@ -17,7 +14,7 @@ function Ascent() {
           &quot;Build your Dharmic Legacy Brand as the Philanthropic Femme&quot;
         </p>
 
-        <div className="max-w-7xl mx-auto ">
+        <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-10">
             <div className="space-y-5">
               <h1 className="text-xl font-semibold">THE ASCENT</h1>
@@ -48,8 +45,8 @@ function Ascent() {
                 src="/ascent.webp"
                 alt="Adi"
                 width={1000}
-                height={1020}
-                className="w-96 md:w-full object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+                height={1000}
+                className="w-full h-fit md:h-96 md:w-full object-contain rounded-lg transition-transform duration-300 hover:scale-105"
               />
             </div>
           </div>

@@ -1,6 +1,5 @@
 "use client";
 import SmoothScroll from "./components/home/smooth-scroll";
-import Navigation from "./components/home/navigation";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import OptIn from "./components/home/opt-in";
@@ -12,22 +11,20 @@ import Read2 from "./components/home/read2";
 import Podcast2 from "./components/home/podcast2";
 import { useInView } from "motion/react";
 import { useRef } from "react";
+import { motion } from "motion/react";
+import { paths } from "@/lib/constant";
 
 export default function Home() {
   const ref = useRef(null);
-  // const isInView = useInView(ref, { margin: "-100px" });
-
+  const isInView = useInView(ref, { once: true });
   return (
     <div className="min-h-screen">
       <SmoothScroll />
-
-      <Navigation />
 
       <section
         id="hero"
         className="text-white min-h-screen flex items-center justify-center relative overflow-hidden"
       >
-        {/* Background video */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover -z-10"
           src="/header.MOV"
@@ -36,7 +33,6 @@ export default function Home() {
           muted
           playsInline
         />
-        {/* Overlay (optional for better text contrast) */}
         <div className="absolute inset-0 bg-black/50 -z-10"></div>
         {/* Content */}
         <div
@@ -54,18 +50,36 @@ export default function Home() {
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <motion.path
-              d={paths}
-              initial={{ pathLength: 0 }}
-              animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
-              transition={{ duration: 3, ease: "easeInOut" }}
-            />
+            {paths.map((d, i) => (
+              <motion.path
+                key={i}
+                d={d}
+                initial={{ pathLength: 0 }}
+                animate={isInView ? { pathLength: 1 } : { pathLength: 0 }}
+                transition={{ duration: 2, ease: "easeInOut", delay: i * 0.3 }}
+              />
+            ))}
           </motion.svg> */}
           <div className="text-4xl md:text-6xl flex flex-col md:flex-row">
-            <span>Meet the </span>
+            <span className="playfair">Meet the </span>
             <div className="flex flex-col items-center space-y-2 mt-2 md:mt-0">
-              <span style={{ fontFamily: "Amsterdam One" }}>Philanthropic</span>
-              <span className="text-xl">FEMME</span>
+              <motion.span
+                style={{ fontFamily: "Amsterdam One" }}
+                className="underline text-3xl md:text-5xl"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+              >
+                Philanthropic
+              </motion.span>
+              <motion.span
+                className="text-xl mt-2 md:mt-4"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
+              >
+                FEMME
+              </motion.span>
             </div>
           </div>
         </div>

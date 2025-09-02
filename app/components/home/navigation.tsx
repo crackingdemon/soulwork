@@ -84,7 +84,7 @@ export default function Navigation() {
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <div className="py-2">
                     <Link
-                      href="/#testimonials"
+                      href="/testimonials"
                       className="block px-4 py-2 text-sm "
                     >
                       Testimonials
@@ -223,7 +223,7 @@ export default function Navigation() {
                   {activeDropdown === "more" && (
                     <div className="mt-3 ml-4 space-y-3">
                       <Link
-                        href="#"
+                        href="/testimonials"
                         className="block text-base  hover:text-gray-900 transition-colors"
                       >
                         Testimonials

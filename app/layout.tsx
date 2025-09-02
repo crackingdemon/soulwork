@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/common/footer";
 import "../styles/fonts.css";
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+import Navigation from "./components/home/navigation";
 
 export const metadata: Metadata = {
   title: "SoulWork | Root into SOUL and branch into WORK that serves the world",
@@ -27,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
+        <Navigation />
         {children}
         <Footer />
       </body>
